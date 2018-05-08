@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: micro-client1
+server:
+  port: 8763

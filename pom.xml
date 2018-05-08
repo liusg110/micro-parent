@@ -16,7 +16,12 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
     </parent>
-
+    <modules>
+        <module>micro-eureka</module>
+        <module>micro-gateway</module>
+        <module>micro-client1</module>
+        <module>micro-client2</module>
+    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

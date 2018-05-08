@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: micro-gateway
+  profiles:
+    active: dev
+zuul:
+  ignored-services: '*'   #ÅÅ³ıËùÓĞ
+  routes:
+    micro-client1: /client/**
+
+

@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xy</groupId>
-    <artifactId>micro-gateway</artifactId>
+    <artifactId>micro-client2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>micro-gateway</name>
+    <name>micro-client2</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -19,18 +19,10 @@
 
 
     <dependencies>
-        <!--增加eureka-server的依赖-->
+        <!--增加eureka的依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-hystrix</artifactId>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
     </dependencies>
 
