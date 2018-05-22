@@ -19,6 +19,6 @@ public class TestController {
     @RequestMapping(value = "api/{test}/{1}")
     public String test1(@PathVariable(value = "test")String test,@PathVariable(value = "1")String param){
         System.out.println("---------port------------8762");
-        return "---------port------------8762";
+        return "---------port------------8762---";
     }
 }

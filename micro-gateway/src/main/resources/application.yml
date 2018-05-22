@@ -6,6 +6,7 @@ spring:
 zuul:
   ignored-services: '*'   #排除所有
   routes:
-    micro-client1: /client/**
+    micro-client1: /client1/**
+    micro-client2: /client2/**
 
 
