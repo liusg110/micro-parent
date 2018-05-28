@@ -1,0 +1,6 @@
+
+server:
+  port: 8764
+eureka:
+  instance:
+    hostname: localhost

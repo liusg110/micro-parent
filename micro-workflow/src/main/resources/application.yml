@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: micro-workflow
+  profiles:
+    active: dev
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+     defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false #关闭eureka的自我保护，生产需要，防止网络连接导致的服务无法显示而默认显示持续1分钟
