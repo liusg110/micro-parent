@@ -21,6 +21,7 @@
         <module>micro-gateway</module>
         <module>micro-client1</module>
         <module>micro-client2</module>
+        <module>micro-workflow</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,6 +51,7 @@
 
     </dependencies>
 
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -61,6 +63,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 
     <build>
         <plugins>
