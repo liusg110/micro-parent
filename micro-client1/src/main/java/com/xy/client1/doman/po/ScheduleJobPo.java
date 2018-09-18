@@ -136,4 +136,16 @@ public class ScheduleJobPo implements Serializable {
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
+
+
+	public ScheduleJobPo(Long jobId, String beanName, String methodName, String params, String cronExpression, Integer status, String remark, Date createTime) {
+		this.jobId = jobId;
+		this.beanName = beanName;
+		this.methodName = methodName;
+		this.params = params;
+		this.cronExpression = cronExpression;
+		this.status = status;
+		this.remark = remark;
+		this.createTime = createTime;
+	}
 }
