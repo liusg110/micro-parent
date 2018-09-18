@@ -1,5 +1,7 @@
 package com.xy.client1.utils;
 
+import com.alibaba.fastjson.JSON;
+import com.xy.client1.contant.Constant;
 import com.xy.client1.doman.po.ScheduleJobPo;
 import common.RRException;
 import org.quartz.*;
@@ -60,7 +62,7 @@ public class ScheduleUtils {
             scheduler.scheduleJob(jobDetail, trigger);
             
             //暂停任务
-            if(scheduleJob.getStatus() == ScheduleStatus.PAUSE.getValue()){
+            if(scheduleJob.getStatus() == Constant.ScheduleStatus.PAUSE.getValue()){
             	pauseJob(scheduler, scheduleJob.getJobId());
             }
         } catch (SchedulerException e) {
@@ -90,7 +92,7 @@ public class ScheduleUtils {
             scheduler.rescheduleJob(triggerKey, trigger);
             
             //暂停任务
-            if(scheduleJob.getStatus() == ScheduleStatus.PAUSE.getValue()){
+            if(scheduleJob.getStatus() == Constant.ScheduleStatus.PAUSE.getValue()){
             	pauseJob(scheduler, scheduleJob.getJobId());
             }
             
