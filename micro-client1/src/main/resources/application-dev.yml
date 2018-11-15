@@ -8,10 +8,11 @@ eureka:
 #    prefer-ip-address: true
 spring:
     datasource:
-        url: jdbc:mysql://192.168.177.126:3306/haha_test?useSSL=false
+        url: jdbc:mysql://192.168.177.126:3306/haha_test?useSSL=false&allowMultiQueries=true
         username: root
         password: 123
         #连接池的配置信息
+        type: com.alibaba.druid.pool.DruidDataSource
         initialSize: 10
         minIdle: 10
         maxActive: 100
@@ -24,3 +25,17 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxPoolPreparedStatementPerConnectionSize: 20
+
+
+    rabbitmq:
+      host: rabbitmq.hivescm.com
+      port: 5672
+      username: hivescm
+      password: hivescm
+      virtual-host: /
+      listener:
+        simple:
+          concurrency: 1
+          auto-startup: true
+      connection-timeout: 300000
+

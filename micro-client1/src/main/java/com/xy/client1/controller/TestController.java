@@ -1,16 +1,12 @@
 package com.xy.client1.controller;
 
-import com.xy.client1.doman.po.ScheduleJobPo;
-import org.quartz.CronTrigger;
+
 import org.quartz.Scheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.PostConstruct;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * @Title: TestController
@@ -21,8 +17,7 @@ import java.util.List;
  */
 @RestController
 public class TestController {
-    @Autowired
-    private Scheduler scheduler;
+
 
 
 
