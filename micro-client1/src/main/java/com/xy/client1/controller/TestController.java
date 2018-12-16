@@ -8,12 +8,14 @@ import com.xy.client1.ExcelUtil;
 import com.xy.client1.Test;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Workbook;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.*;
+
 
 /**
  * @Title: TestController
@@ -27,9 +29,32 @@ public class TestController {
 
 
 
+
+/*    *//**
+     * 项目启动时，初始化定时器
+     *//*
+    @PostConstruct
+    public void init(){
+        List<ScheduleJobPo> scheduleJobList = schedulerJobDao.queryList(new HashMap<>());
+        for(ScheduleJobPo scheduleJob : scheduleJobList){
+            CronTrigger cronTrigger = ScheduleUtils.getCronTrigger(scheduler, scheduleJob.getJobId());
+            //如果不存在，则创建
+            if(cronTrigger == null) {
+                ScheduleUtils.createScheduleJob(scheduler, scheduleJob);
+            }else {
+                ScheduleUtils.updateScheduleJob(scheduler, scheduleJob);
+            }
+        }
+    }*/
+
+
     @RequestMapping(value = "api/{test}/{1}")
     public String test1(@PathVariable(value = "test")String test,@PathVariable(value = "1")String param){
         System.out.println("---------port------------8762");
+
+
+
+
         return "---------port------------8762---";
     }
 
