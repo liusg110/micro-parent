@@ -5,9 +5,7 @@ import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 
 /**
  * 过滤器
@@ -71,11 +69,12 @@ public class AccessFilter extends ZuulFilter {
 
         // currentContext.getResponse().getWriter().write("token is empty!!!");
         //通过context.setSendZuulResponse(false)可以终止请求的转发，但是只在pre类型的过滤器中设置才可以。
-        currentContext.setSendZuulResponse(false);         //不需要进行路由，也就是不会调用api服务提供者
-        currentContext.setResponseStatusCode(401);
-        currentContext.setResponseBody("{\"result\":\"pre01Filter auth not correct!\"}");
+        //currentContext.setResponseStatusCode(401);
+       // currentContext.setResponseBody("{\"result\":\"pre01Filter auth not correct!\"}");
 
 
+        logger.info(String.format("send %s request to %s", request.getMethod(), request.getRequestURL().toString()));
         return null;
+
     }
 }

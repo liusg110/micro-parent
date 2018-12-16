@@ -1,0 +1,19 @@
+#管理Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+#  instance:
+#    ip-address: 172.31.16.95
+#    prefer-ip-address: true
+spring:
+    rabbitmq:
+      host: rabbitmq.hivescm.com
+      port: 5672
+      username: hivescm
+      password: hivescm
+      virtual-host: /
+      listener:
+        simple:
+          concurrency: 1
+      connection-timeout: 300000
