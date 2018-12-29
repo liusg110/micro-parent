@@ -1,8 +1,8 @@
 #管理Eureka
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8761/eureka/
 #  instance:
 #    ip-address: 172.31.16.95
 #    prefer-ip-address: true
