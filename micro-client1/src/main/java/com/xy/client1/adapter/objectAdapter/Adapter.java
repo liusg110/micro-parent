@@ -13,6 +13,9 @@ package com.xy.client1.adapter.objectAdapter;
  *     然后在适配器P中定义私有变量C（对象）（B接口指向变量名），再定义一个带参数的构造器用来为对象C赋值，再在A接口的方法实现中使用对象C调用其来源于B接口的方法。
  *
  * 　　详见下方实例：我们仍然以ps2与usb的转接为例
+ * https://blog.csdn.net/qq_33326449/article/details/78941267
+ *
+ * 这是最常见的防止
  */
 
 public class Adapter implements Ps2{

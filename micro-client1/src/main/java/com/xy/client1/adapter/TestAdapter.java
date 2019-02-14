@@ -27,6 +27,10 @@ package com.xy.client1.adapter;
     //fixme 适配器就是一种适配中间件，它存在于不匹配的二者之间，用于连接二者，将不匹配变得匹配，简单点理解就是平常所见的转接头，转换器之类的存在
     //fixme 分为类适配器、对象适配器、接口适配器
 
+    //重要网址  https://blog.csdn.net/qq_33326449/article/details/78941267
+
+   //fixme  只需要将原接口转化为客户希望的另一个接口，就是适配器模式！
+
 
 
 public class TestAdapter {
