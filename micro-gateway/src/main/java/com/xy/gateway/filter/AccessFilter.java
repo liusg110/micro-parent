@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 过滤器
  *
- * @author zxc
+ * @author liu shouguang
  * @since 2017/8/13 下午10:53
  */
 @Component

@@ -14,7 +14,7 @@ import java.io.InputStream;
 /**
  * 熔断响应
  *
- * @author zxc
+ * @author liusg
  * @since 2017/8/13 下午10:53
  */
 @Component
