@@ -3,6 +3,9 @@ package com.xy.client1.Builder.Impl;
 import com.xy.client1.Builder.PersonBuilder;
 import com.xy.client1.doman.po.PersonPo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * FileName: ManBuilderImpl
  * Author: liusg
@@ -20,6 +23,12 @@ public class ManBuilder implements PersonBuilder {
 
     @Override
     public void buildHead() {
+        Map map=new HashMap();
+        map.put("a", "aaa");
+        map.put("b", "bbb");
+        map.put("c", "ccc");
+        map.put("d", "ddd");
+
         personPo.setHead("我是男人的头部");
     }
 
