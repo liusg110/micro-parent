@@ -42,12 +42,13 @@ class ProducerConsumerProblem {
         public void run() {
             while (true) {
                 try {
-                    empty.acquire();//等待空位
-                    mutex.acquire();//等待读写锁
-                    count++;
-                    System.out.println("生产者生产了一个，还剩：" + count);
-                    mutex.release();//释放读写锁
-                    full.release();//放置产品
+                        empty.acquire();//等待空位
+                        mutex.acquire();//等待读写锁
+                        count++;
+                        System.out.println("生产者生产了一个，还剩：" + count);
+                        mutex.release();//释放读写锁
+                        full.release();//放置产品
+
                     //随机休息一段时间，让生产者线程有机会抢占读写锁
                     Thread.sleep(((int) Math.random()) % 10);
                 } catch (InterruptedException e) {
