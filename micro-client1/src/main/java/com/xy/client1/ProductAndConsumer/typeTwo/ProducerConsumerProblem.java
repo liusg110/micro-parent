@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
  * <p>
  * 生产者消费者模型
  */
-class ProducerConsumerProblem {
+public  class ProducerConsumerProblem {
 
     //初始容量
     private static final int N = 10;

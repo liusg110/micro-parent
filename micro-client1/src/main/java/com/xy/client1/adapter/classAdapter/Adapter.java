@@ -14,6 +14,6 @@ public class Adapter extends UsbImpl implements Ps2{
 
     @Override
     public void isPs2() {
-        System.out.println("Usb接口");
+        this.isUsb();
     }
 }

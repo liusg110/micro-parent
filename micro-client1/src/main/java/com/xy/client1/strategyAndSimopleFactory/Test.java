@@ -1,5 +1,8 @@
 package com.xy.client1.strategyAndSimopleFactory;
 
+import java.nio.ByteBuffer;
+import java.util.Iterator;
+
 /**
  * FileName: Test
  * Author: liusg
@@ -11,9 +14,17 @@ package com.xy.client1.strategyAndSimopleFactory;
  */
 
 public class Test {
-    public static void main(String[] args) {
-        Context context=new Context("B");
-        context.summery();
+    public static void main(String   [] abd) {
+        /*Context context=new Context("B");
+        context.summery();*/
+        //System.out.println("HelloWorld");
+
+        for(int i=0;i<4000;i++){
+            ByteBuffer.allocateDirect(1024*1024*1024
+
+            );
+            System.out.println(i);
+        }
     }
 
 }
