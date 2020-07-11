@@ -15,16 +15,12 @@ import java.util.Iterator;
 
 public class Test {
     public static void main(String   [] abd) {
-        /*Context context=new Context("B");
-        context.summery();*/
-        //System.out.println("HelloWorld");
+        Context context=new Context("B");
+        context.summery();
 
-        for(int i=0;i<4000;i++){
-            ByteBuffer.allocateDirect(1024*1024*1024
 
-            );
-            System.out.println(i);
-        }
+        System.out.println(Context.testEmun(StrategyEnum.D));
+
     }
 
 }
