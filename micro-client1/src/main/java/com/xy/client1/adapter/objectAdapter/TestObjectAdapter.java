@@ -1,8 +1,5 @@
 package com.xy.client1.adapter.objectAdapter;
 
-import com.xy.client1.adapter.classAdapter.Adapter;
-import com.xy.client1.adapter.classAdapter.Ps2;
-
 /**
  * FileName: TestObjectAdapter
  * Author: liusg
@@ -12,7 +9,7 @@ import com.xy.client1.adapter.classAdapter.Ps2;
 
 public class TestObjectAdapter {
     public static void main(String[] args) {
-        Ps2 p=new Adapter();
+        Ps2 p=new Adapter(new USB());
         p.isPs2();
     }
 }

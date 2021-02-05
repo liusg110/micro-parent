@@ -17,6 +17,13 @@ import com.xy.client1.doman.po.Car;
 public class TestBuilder {
 
     public static void main(String[] args) {
+        //使用场景，当某个动作需要多步骤操作，为了减少使用方的调用难度，将多步骤进行封装，只暴露对应的构建类
+
+        //工作流封装时，由于流程配置各部分相对独立，但是环节较多，我们定义了多种derector。分别定义各自的构建方式，detector中
+        //传递的是构建类的接口
+
+
+
         CarDirector cd=new CarDirector();
         cd.constructCar(new TopMatchingBuilder());
 

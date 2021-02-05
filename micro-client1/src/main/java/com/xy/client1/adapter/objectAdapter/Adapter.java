@@ -1,5 +1,7 @@
 package com.xy.client1.adapter.objectAdapter;
 
+
+
 /**
  * FileName: Adapter
  * Author: liusg
@@ -19,13 +21,13 @@ package com.xy.client1.adapter.objectAdapter;
  */
 
 public class Adapter implements Ps2{ //客户端使用的实际是ps2接口中的isPs2()，如果isPs2()无法实现usb的功能，那么就可以采用对象适配器的方式
-    private Usb usb;
-    public Adapter(Usb usb){
+    private USB usb;
+    public Adapter(USB usb){
         this.usb=usb;
     }
 
     @Override
     public void isPs2() {
-        usb.isUsb();
+        System.out.println(usb.print());
     }
 }
